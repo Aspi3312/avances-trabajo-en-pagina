@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="MainPage.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Assets/WA.png" alt="Logo de la tienda">
+            </div>
+            <ul class="menu">
+                <li><a href="#ropa">Ropa</a></li>
+                <li><a href="#accesorios">Accesorios</a></li>
+                <li><a href="#zapatos">Zapatos</a></li>
+                <li><a href="#sale">SALE</a></li>
+            </ul>
+            <div class="icons">
+                <a href="carrito.html" class="cart-icon">🛒</a>
+                <a href="Perfil de Usuario/x.html" class="profile-icon">👤</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-page">
+        <section class="search-section">
+            <h2>Explora Nuestros Productos</h2>
+            <div class="products" id="products"></div>
+    </div>
+            <form class="search-form">
+                <input type="text" placeholder="Buscar productos...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </section>
+
+        <section class="product-list">
+            <h2>Nuestros Productos</h2>
+            <div class="product-grid">
+                                                        <!-- Repetir el bloque para cada producto -->
+                <div class="product-card">
+                    <img src="Assets/Body Burdeos.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Body Burdeos</h3>
+                        <p>Precio: $100.000</p>
+                        <button class="favorite-btn">Adquirir<i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Assets/bolsooso.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Bolso de Oso</h3>
+                        <p>Precio: $80.000</p>
+                        <button class="favorite-btn">Adquirir<i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Assets/botablanca.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Bota Blanca</h3>
+                        <p>Precio: $250.000</p>
+                        <button class="favorite-btn">Adquirir<i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Assets/phone case.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Phone Case</h3>
+                        <p>Precio: $25.000</p>
+                        <button class="favorite-btn">Adquirir<i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Assets/7.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>CropTop</h3>
+                        <p>Precio: $65.000</p>
+                        <button class="favorite-btn">Adquirir<i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+                <!-- Fin del bloque de producto -->
+            </div>
+        </section>
+
+        <div class="container">
+            <h2>Otras Categorías</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="Assets/10.png" alt="Ropa">
+                    </div>
+                    <div class="category-content">
+                        <h2 class="category-title">Ropa</h2>
+                        <button class="search-more-btn">Buscar más</button>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="Assets/reloj.png" alt="Accesorios">
+                    </div>
+                    <div class="category-content">
+                        <h2 class="category-title">Accesorios</h2>
+                        <button class="search-more-btn">Buscar más</button>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="Assets/tacones negro.png" alt="Zapatos">
+                    </div>
+                    <div class="category-content">
+                        <h2 class="category-title">Zapatos</h2>
+                        <button class="search-more-btn">Buscar más <a href=""></a></button>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="Assets/bañotra.png" alt="ropabaño">
+                    </div>
+                    <div class="category-content">
+                        <h2 class="category-title">Traje de Baño</h2>
+                        <button class="search-more-btn">Buscar más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="favorites">
+            <h2>Tus Favoritos</h2>
+            <div class="favorite-items">
+                                            <!-- Repite pa cada producto favorito -->
+                <div class="favorite-card">
+                    <img src="Assets/phone case.png" alt="Producto Favorito">
+                    <div class="favorite-info">
+                        <h3>Nombre del Producto: Phone Case ❤️</h3>
+                        <p class="price">Precio del Prodcuto: $25.000</p>
+                        <p class="description">Breve descripción del producto, destacando sus características principales.</p>
+                        <div class="favorite-actions">
+                            <button class="add-to-cart"><a href="carrito.html">Añadir al Carrito</a></button>
+                            <button class="remove-favorite">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                                    <!-- Fin del bloque de producto favorito -->
+            </div>
+        </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>¡Acerca de nosotros!</h3>
+                <p>Somos un grupo de 3 integrantes: <br>
+                    - Valeria Delgado <br>
+                    - Andrés Espinosa <br>
+                    - Daniel Felipe Rivas.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="#ropa">Ropa</a></li>
+                    <li><a href="#accesorios">Accesorios</a></li>
+                    <li><a href="#zapatos">Zapatos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: info@tutienda.com</p>
+                <p>Teléfono: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 We Are ST. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="./Product.js"></script>
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
